@@ -1,8 +1,4 @@
-azureml-sdk
-# pandas
-# scikit-learn
-# numpy
-# matplotlib
-# seaborn
-# optuna
-# streamlit
+streamlit
+requests
+urllib
+json
