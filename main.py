@@ -77,7 +77,7 @@ if st.button("Prédire la survie"):
         print("preddddd", prediction)
 
         # Affichage des résultats
-        st.success(f"Résultat : {'Survivant' if prediction['Results']['WebServiceOutput0'][0] == 1 else 'Non survivant'}")
+        st.success(f"Résultat : {'Survivant' if prediction['Results']['WebServiceOutput0'][0]['Scored Labels'] == 1 else 'Non survivant'}")
 
     except urllib.error.HTTPError as error:
         st.error(f"Erreur HTTP : {error.code}")
